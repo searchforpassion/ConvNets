@@ -18,4 +18,5 @@ def make_model(input_shape=(32,32,1), num_classes=10):
     
 if __name__ == '__main__':
     model = make_model(input_shape=(32,32,1), num_classes=10)
+    model.summary()
     keras.utils.plot_model(model, show_shapes=True)
